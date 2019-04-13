@@ -10664,3 +10664,14 @@ body {
   background-color: #fff;
 }
 
+body .banner {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body .banner__head {
+  text-transform: uppercase;
+}
+
