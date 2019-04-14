@@ -12,5 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('home');
+    $cars = \App\Car::all();
+
+    return view('home', ['cars' => $cars]);
 });

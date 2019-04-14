@@ -14,13 +14,12 @@
             <div class="col-md-12">
                 <form action="" method="" class="form">
                     <div class="form-group">
-                    <label for="exampleFormControlSelect1">Wybierz samochód</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
+                    <label for="carsFormSelect">Wybierz samochód</label>
+                    <select class="form-control" id="carsFormSelect">
+                        <option selected="true" disabled="disabled">Wybierz samochód:</option> 
+                        @foreach ($cars as $car)
+                            <option value="{{ $car->name }}">{{ $car->name }}</option>
+                        @endforeach
                     </select>
                     </div>
                     <div class="form-group">
