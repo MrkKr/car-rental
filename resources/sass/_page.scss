@@ -1,3 +1,14 @@
 body {
   background-color: #fff;
+
+  .banner {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__head {
+      text-transform: uppercase;
+    }
+  }
 }
